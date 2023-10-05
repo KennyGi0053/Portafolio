@@ -1,0 +1,243 @@
+.ContactContainer  {
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    width: 100%;  
+    background-color: black;
+    background-size: 100% 100%;
+    background: linear-gradient(-45deg, #000000, #292828, #000000);
+  background-size: 200% 200%;
+  animation: gradientAnimation 10s linear infinite; /* Ajusta la duración según tu preferencia */
+    overflow: hidden;
+    margin: 0;
+  }
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .imageyo {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 80px;
+    
+  }
+
+  .imageyo img {
+    
+    height: 680px;
+    
+    
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    animation: waterEffect 2s ease-in-out infinite;
+  }
+  
+  @keyframes waterEffect {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(-10px) rotate(1deg);
+      opacity: 0.8;
+    }
+    100% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+
+  .contactinfo {
+    color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content:center;
+    width: 100%;
+    margin-bottom: 50px;
+  
+  }
+  
+  .titulocontact {
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+
+    animation: revealText 5s ; /* Ajusta la duración de la animación según sea necesario */
+    background: linear-gradient(45deg, rgb(5,221,98), #3b5998);
+  -webkit-background-clip: text; /* Esto es necesario para navegadores webkit como Chrome y Safari */
+  color: transparent;
+  white-space: nowrap; /* Evita el salto de línea */
+
+  }
+
+  @keyframes revealText {
+    0% {
+      width: 0;
+      opacity: 0;
+    }
+    100% {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+
+  .correoIcon {
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+  }
+  .correo {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+ 
+  }
+  .iconmail {
+    align-items: center;
+    height: 90px;
+    justify-content: center;
+    margin: 20px;
+ 
+  }
+
+  .whatsappContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 80px;
+  }
+  .whatsappicon {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    margin: 60px;
+    
+ 
+  }
+
+  .numero {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+  }
+
+  .linkedinContainer{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .linked {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    margin: 15px;
+  }
+
+  .linkedtext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+  }
+
+  .linkedlink {
+    color: aquamarine;
+  }
+
+  .gitContainer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .imagegit {
+    display: flex;
+    align-items: center;
+    height: 95px;
+    
+  }
+
+  .gittext {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 60px;
+  }
+
+  .gitlink {
+    color: aquamarine;
+  }
+
+  @media screen and (max-width: 1060px) {
+    .ContactContainer,
+    .contactinfo,
+    .iconmail
+    
+    {
+      margin-left: 0; /* Elimina el margen izquierdo */
+      text-align: center; /* Centra el contenido de los contenedores */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      
+    
+    }
+   
+    .imageyo{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      
+    }
+    .imageyo img {
+      height: 460px;
+    }
+    .whatsappicon {
+      margin: 30px;
+    }
+    .correo {
+      font-size: 22px;
+    }
+
+    .numero {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      margin: 10px;
+    }
+
+    .linkedtext {
+      font-size: 20px;
+    }
+
+    .gittext {
+      font-size: 19px;
+    }
+  }

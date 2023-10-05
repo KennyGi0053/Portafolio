@@ -1,0 +1,174 @@
+.proyecto {
+    
+    text-align: center;
+    justify-content: center;
+    min-height: 100vh; 
+    width: 100%;  
+    background-color: black;
+    background-size: 100% 100%;
+    background: linear-gradient(-45deg, #000000, #292828, #000000);
+  background-size: 200% 200%;
+  animation: gradientAnimation 10s linear infinite; /* Ajusta la duración según tu preferencia */
+    overflow: hidden;
+  }
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .imagegames {
+    
+    
+    
+    height: 300px;
+    font-size: 24px; /* Ajusta el tamaño de fuente según sea necesario */
+    
+    transition: transform 0.5s ease;
+    cursor: pointer;
+    margin-top: -100px;
+
+  }
+
+  .imagegames:hover {
+    transform: rotateY(30deg) scale(1.2); /* Gira horizontalmente y aumenta el tamaño */}
+
+
+    .titulo1 {
+        color: aliceblue;
+    
+    
+    
+        opacity: 0; /* Inicialmente, el texto tiene una opacidad de 0 */
+        animation: fadeIn 20s ease forwards; /* Aplica una animación de aparición gradual */
+        background: linear-gradient(45deg, rgb(5,221,98), #3b5998);
+  -webkit-background-clip: text; /* Esto es necesario para navegadores webkit como Chrome y Safari */
+  color: transparent;
+  font-size: 40px;
+  height: 200px;
+ 
+    }
+      
+      @keyframes fadeIn {
+        from {
+          opacity: 0; /* Empieza con opacidad 0 (invisible) */
+        }
+        to {
+          opacity: 1; /* Termina con opacidad 1 (totalmente visible) */
+        }
+      }
+
+      .titulo2 {
+        color: aliceblue;
+        opacity: 0; /* Inicialmente, el texto tiene una opacidad de 0 */
+        animation: fadeIn 20s ease forwards; /* Aplica una animación de aparición gradual */
+        background: linear-gradient(45deg, rgb(5,221,98), #3b5998);
+  -webkit-background-clip: text; /* Esto es necesario para navegadores webkit como Chrome y Safari */
+  color: transparent;
+  font-size: 40px;
+  height: 200px;
+ 
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0; /* Empieza con opacidad 0 (invisible) */
+        }
+        to {
+          opacity: 1; /* Termina con opacidad 1 (totalmente visible) */
+        }
+      }
+
+      .ticket {
+ 
+        
+    height: 300px;
+    font-size: 24px; /* Ajusta el tamaño de fuente según sea necesario */
+    transition: transform 0.5s ease;
+    cursor: pointer;
+    margin-top: -100px;
+ 
+    
+      }
+
+      .ticket:hover {
+        transform: rotateY(30deg) scale(1.2); /* Gira horizontalmente y aumenta el tamaño */
+    
+    }
+    
+    .laptop {
+       
+        height: 200px;
+       
+
+    }
+
+    .titulo0 {
+   
+        
+        color: antiquewhite;
+     
+        font-size: 40px;
+        animation: revealText 4s ease-in-out; /* Ajusta la duración de la animación según sea necesario */
+        background: linear-gradient(45deg, rgb(5,221,98), #3b5998);
+      -webkit-background-clip: text; /* Esto es necesario para navegadores webkit como Chrome y Safari */
+      color: transparent;
+      
+    }
+
+    @keyframes revealText {
+        0% {
+          width: 0;
+          opacity: 0;
+        }
+        100% {
+          width: 100%;
+          opacity: 1;
+        }
+      }
+
+      .tituloLaptop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        margin-left: 200px;
+        
+        
+      }
+
+      .imagenes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 120px;
+    
+      }
+
+      
+      
+      /* Media query para dispositivos con una pantalla de hasta 740px de ancho */
+/* Media query para dispositivos con una pantalla de hasta 740px de ancho */
+@media screen and (max-width: 1060px) {
+  .tituloLaptop,
+  .imagenes,
+  .H2 {
+    margin-left: 0; /* Elimina el margen izquierdo */
+    text-align: center; /* Centra el contenido de los contenedores */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    
+  
+  }
+ 
+}

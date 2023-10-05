@@ -1,0 +1,356 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;  
+    background-color: black;
+    background-size: 100% 100%;
+    background: linear-gradient(-45deg, #000000, #292828, #000000);
+    flex-wrap: wrap;
+  animation: gradientAnimation 10s linear infinite; /* Ajusta la duración según tu preferencia */
+    overflow: hidden;
+    
+  }
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .saludo {
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    font-size: 24px; /* Ajusta el tamaño de fuente según sea necesario */
+    overflow: hidden; /* Oculta cualquier parte del texto que se salga del contenedor */
+    white-space: nowrap; /* Evita el salto de línea */
+    
+    justify-content: center;
+  }
+
+  .salud {
+    display: inline-block;
+    animation: reveal 3s linear infinite; /* Ajusta la duración de la animación según sea necesario */
+  }
+  
+  .salud {
+    display: inline-block;
+    position: relative;
+    animation: revealText 2s ease-in-out; /* Ajusta la duración de la animación según sea necesario */
+    background: linear-gradient(45deg, rgb(5,221,98), #3b5998);
+  -webkit-background-clip: text; /* Esto es necesario para navegadores webkit como Chrome y Safari */
+  color: transparent;
+  }
+  
+  @keyframes revealText {
+    0% {
+      width: 0;
+      opacity: 0;
+    }
+    100% {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+  
+ 
+  .varicont {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(40, 42, 63);
+    width: 90%;
+
+ 
+  }
+
+  .relojContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 260px;
+  }
+  
+  .rel {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .variable {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    min-height: 280px;
+    
+  }
+
+  .fondoContainer {
+    display: flex;
+  }
+  .fondo {
+    display: flex;
+    align-items: center;
+    height: 250px;
+    border-radius: 100px;
+    margin: 20px;
+    border: solid 2px rgb(5,221,98);
+    justify-content: center;
+    z-index: 15;
+    transition: border-color 0.5s ease;
+    
+  }
+
+  @keyframes borderChange {
+   
+    25% {
+        border-color: rgb(83, 71, 247);
+    }
+    50% {
+        border-color: rgb(5,221,98);
+    }
+    75% {
+        border-color: yellow;
+    }
+  
+  }
+
+  .h2 {
+    color: aliceblue;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+   
+
+
+  }
+  
+
+  .h22 {
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+  }
+
+  .h22Cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 50px;
+  }
+
+  .h2cont {
+    background-color: rgb(23,24,16);
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 2px;
+    align-items: center;
+    color: rgb(5,221,98);
+    text-align: center;
+    justify-content: center;
+    min-height: 230px;
+    border-bottom-left-radius: 20px; /* Redondea la esquina inferior izquierda */
+    border-bottom-right-radius: 20px; /* Redondea la esquina inferior derecha */
+    margin-bottom: 180px;
+    transition: border-color 0.5s ease;
+    width: 90%;
+  }
+
+  /* Agrega una animación que cambia gradualmente el color del borde */
+@keyframes borderChange {
+ 
+  25% {
+      border-color: rgb(83, 71, 247);
+  }
+  50% {
+      border-color: rgb(5,221,98);
+  }
+  75% {
+      border-color: yellow;
+  }
+  
+}
+
+/* Aplica la animación al borde */
+.h2cont:hover {
+  animation: borderChange 5s linear infinite; /* Cambia el tiempo y los valores según desees */
+}
+
+.fondo:hover {
+  animation: borderChange 5s linear infinite
+}
+
+.h1tec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  font-size: 18px;
+
+
+}
+
+.reacticon {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  margin: 20px;
+}
+
+.redux {
+  display: flex;
+  margin: 20px;
+}
+
+.html1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ height: 40px;
+ margin: 20px;
+z-index: 4;
+ 
+
+}
+
+.css1 {
+  display: flex;
+  align-items: center;
+  z-index: 5;
+  height: 40px;
+  margin: 20px;
+}
+
+.javas1 {
+  display: flex;
+  align-items: center;
+  z-index: 6;
+  height: 42px;
+  margin: 20px;
+}
+
+.express {
+  display: flex;
+  align-items: center;
+  z-index: 7;
+  height: 38px;
+  margin: 20px;
+
+}
+
+.sequelize {
+  display: flex;
+  align-items: center;
+  z-index: 8;
+  height: 38px;
+  margin: 20px;
+}
+
+.postgres {
+  display: flex;
+  align-items: center;
+  z-index: 9;
+  height: 38px;
+  margin: 20px;
+}
+
+.node {
+  display: flex;
+  align-items: center;
+  z-index: 9;
+  height: 45px;
+  margin: 20px;
+}
+
+
+.rocket {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 150px;
+
+}
+
+.vite {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  height: 35px;
+  z-index: 11;
+}
+
+.iconosCont {
+  display: flex;
+  align-items: end;
+  text-align: center;
+  justify-content: right;
+  
+}
+
+.h1tecCont {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 10px;
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 1060px) {
+ 
+  .container,
+  .h1tecCont,
+  .relojContainer
+  {
+    margin-left: 0; /* Elimina el margen izquierdo */
+    text-align: center; /* Centra el contenido de los contenedores */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .saludo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    font-size: 11px;
+  }
+
+  .varicont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 0;
+  }
+
+  .variable {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 20px;
+    width: 100%;
+  }
+
+
+}

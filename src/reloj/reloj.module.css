@@ -1,0 +1,23 @@
+.reloj {
+    font-family: Arial, sans-serif;
+  font-size: 2rem;
+  display: inline-block;
+  background: linear-gradient(45deg, #f2f561, #3b5998); /* Efecto degradado */
+  -webkit-background-clip: text; /* Clip de texto para el degradado */
+  color: transparent; /* Hacemos el texto transparente */
+  padding: 0.5rem 1rem; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+  width: 140px;
+  }
+  
+  /* Estilos para los dígitos de la hora, minuto y segundo */
+  
+ .tiempo{
+    display: inline-block;
+    width: 30px; /* Ancho fijo para cada dígito */
+    text-align: center;
+    margin: 0 5px; /* Margen entre los dígitos */
+    background-color: transparent; /* Color de fondo de los dígitos */
+    border-radius: 3px; /* Bordes redondeados para los dígitos */
+  }

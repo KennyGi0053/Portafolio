@@ -1,0 +1,148 @@
+.acercontainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh; 
+        width: 100%;  
+        background-color: black;
+        background-size: 100% 100%;
+        background: linear-gradient(-45deg, #000000, #292828, #000000);
+      background-size: 200% 200%;
+      animation: gradientAnimation 10s linear infinite; /* Ajusta la duración según tu preferencia */
+        overflow: hidden;
+       
+
+}
+      @keyframes gradientAnimation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+.gifi {
+    margin-right: 0px;
+    align-items: center;
+    text-align: center;
+  
+    transform: scale(1); /* Escala inicial */
+  transition: transform 0.3s ease; /* Transición suave */
+    
+}
+
+.gifi:hover {
+    transform: scale(1.1); /* Escala al pasar el cursor */
+  }
+
+.acerca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(140, 151, 145);
+    cursor: context-menu;
+   
+    
+    line-height: 30px;
+    
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+    color: #9c8484; /* Color de texto inicial */
+  transition: color 0.3s ease;  /* Transición suave */
+    font-size: 20px;
+   
+
+   
+}
+
+.acerca:hover {
+    color: #e4dbda;
+    border-color:rgb(5,221,98) ;
+}
+
+.acerca2 {
+    display: flex;
+    align-items: center;
+    color: rgb(140, 151, 145);
+    cursor: context-menu;
+    
+    
+    line-height: 30px;
+    
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+    color: #9c8484; /* Color de texto inicial */
+  transition: color 0.3s ease;  /* Transición suave */
+    font-size: 20px;
+   
+    
+}
+
+.acerca2:hover {
+    color: #e4dbda;
+    border-color:rgb(5,221,98) ;
+}
+
+.acerca3 {
+    
+    align-items: center;
+    color: rgb(140, 151, 145);
+    
+    
+   
+    line-height: 30px;
+    
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+    color: #9c8484; /* Color de texto inicial */
+    transition: color 0.3s ease;  /* Transición suave */
+    font-size: 20px;
+    
+    cursor: context-menu;
+}
+
+.acerca3:hover {
+    color: #e4dbda;
+    border-color:rgb(5,221,98) ;
+}
+
+.containerText {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  width: 750px;
+  margin-left: 50px;
+  
+  
+}
+@media screen and (max-width: 1060px) {
+  .acercontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    
+    }
+  
+    .containerText {
+      margin-top: 50px;
+      margin-left: 0;
+      width: 350px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .gifi {
+      margin: 0;
+    }
+}
+

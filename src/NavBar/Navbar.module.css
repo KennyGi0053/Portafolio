@@ -1,0 +1,134 @@
+.Nav {
+  display: flex;
+    background-color: rgb(23,24,16);
+    height: 90px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    
+    flex-direction: row;
+
+    
+    
+}
+
+.Nav a {
+    margin: 10px;
+    color: rgb(245, 242, 242);
+    transition: color 0.3s ease;
+    width: 100px;
+    
+  }
+
+  .Nav a:hover {
+    color: rgb(5,221,98)
+  }
+
+ 
+
+  .imagen {
+    margin-left: 50px;
+    height: 100px;
+    width: 100px;
+  }
+  
+ .links {
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   margin: 140px;
+   
+height: 10px;
+ }
+.Music {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  width: auto;
+  margin-left: 700px;
+  margin-top: -25px;
+}
+
+/* Estilo para mostrar/ocultar la barra de navegación móvil */
+.Nav .links.showNav {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.3);
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+position: absolute;  
+ z-index: 16;
+  border: solid 2px rgb(95, 247, 161);
+  min-width: 130px;
+  min-height: 220px;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-top: 430px;
+}
+
+
+
+.mobileMenuIcon {
+  display: none; /* Oculta el icono del menú hamburguesa por defecto */
+  cursor: pointer;
+  margin-left: 220px;
+
+  /* Agrega los estilos que desees para el icono del menú hamburguesa */
+}
+
+/* Media query para mostrar el icono del menú hamburguesa en dispositivos móviles */
+@media screen and (max-width: 1024px) {
+  .imagen {
+    margin-left: 30px;
+    height: 90px;
+  }
+
+  .Nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .mobileMenuIcon {
+    display: block;
+    cursor: pointer;
+    margin-left: 10px; /* Ajusta este valor según sea necesario */
+  }
+
+  .links {
+    display: none; /* Oculta la barra de navegación principal en dispositivos móviles */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .Music {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0px;
+    margin-top: 170px;
+  }
+
+  .hamburguer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .showNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    margin-left: 250px;
+    /* Ajusta el margen o elimínalo según sea necesario */
+  }
+}
