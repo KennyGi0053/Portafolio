@@ -19,7 +19,9 @@
     color: rgb(245, 242, 242);
     transition: color 0.3s ease;
     width: 100px;
-    
+    text-decoration: none;
+    color: white;
+    font-family: fantasy;
   }
 
   .Nav a:hover {
@@ -35,10 +37,10 @@
   }
   
  .links {
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   margin: 140px;
-   
-height: 10px;
+  all:unset;   
+  margin: 140px;
+  text-decoration: none;
+  height: 10px;
  }
 .Music {
   display: flex;

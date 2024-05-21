@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100%;
     width: 100%;  
     background-color: black;
     background-size: 100% 100%;
@@ -36,10 +36,7 @@
     justify-content: center;
   }
 
-  .salud {
-    display: inline-block;
-    animation: reveal 3s linear infinite; /* Ajusta la duración de la animación según sea necesario */
-  }
+  
   
   .salud {
     display: inline-block;
@@ -69,7 +66,7 @@
     justify-content: center;
     background-color: rgb(40, 42, 63);
     width: 90%;
-
+    
  
   }
 
@@ -149,7 +146,6 @@
     align-items: center;
     justify-content: center;
     
-    margin: 50px;
   }
 
   .h2cont {
@@ -164,7 +160,6 @@
     min-height: 230px;
     border-bottom-left-radius: 20px; /* Redondea la esquina inferior izquierda */
     border-bottom-right-radius: 20px; /* Redondea la esquina inferior derecha */
-    margin-bottom: 180px;
     transition: border-color 0.5s ease;
     width: 90%;
   }
@@ -280,7 +275,7 @@ z-index: 4;
   display: flex;
   align-items: center;
   text-align: center;
-  height: 150px;
+  height: 80px;
 
 }
 
@@ -305,33 +300,155 @@ z-index: 4;
   align-items: center;
   text-align: center;
   justify-content: center;
+}
+
+.ContactContainer {
+  display: flex;
+  margin-bottom: 300px;
+}
+.contactinfo {
+  color: aquamarine;
+  display: flex;
+  flex-direction: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content:center;
+  margin: 80px;
+}
+
+.correoIcon {
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+}
+.correo {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
   margin: 10px;
-  margin-bottom: 100px;
+
+  font-size: 18px;
+
+}
+.iconmail {
+  align-items: center;
+  height: 30px;
+  justify-content: center;
+  margin: 10px;
+
+}
+
+.whatsappContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.whatsappicon {
+  display: flex;
+  flex-direction: wrap;
+  align-items: center;
+  height: 30px;
+  margin: 10px;  
+
+}
+
+.numero {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  font-size: 18px;
+}
+
+.linkedinContainer{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.linked {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  margin: 10px;
+ 
+}
+
+.linkedtext {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+}
+
+.linkedlink {
+  color: aquamarine;
+  text-decoration: none;
+}
+
+.gitContainer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.imagegit {
+  display: flex;
+  align-items: center;
+  height: 45px;
+
+  margin: 10px;
+}
+
+.gittext {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  font-size: 18px;
+}
+
+.gitlink {
+  color: aquamarine;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1060px) {
  
   .container,
   .h1tecCont,
-  .relojContainer
+  .contactinfo
   {
-    margin-left: 0; /* Elimina el margen izquierdo */
+    margin: 0;
     text-align: center; /* Centra el contenido de los contenedores */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0;
   }
 
   .saludo {
     display: flex;
-    flex-direction: column;
+    flex-direction: wrap;
     align-items: center;
     text-align: center;
     justify-content: center;
-    margin: 0;
-    font-size: 11px;
+    font-size: 9px;
+  }
+  .contactinfo{
+    margin-top: 40px;
+  }
+
+  .relojContainer {
+    margin: 30px;
   }
 
   .varicont {
@@ -339,7 +456,6 @@ z-index: 4;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 0;
   }
 
   .variable {
@@ -347,7 +463,6 @@ z-index: 4;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0;
     min-height: 20px;
     width: 100%;
   }

@@ -12,6 +12,11 @@ import Loader from '../Loader/Loader'
 import { useEffect, useState } from 'react'
 import rocket from '../assets/rocket.gif'
 import vite from '../assets/vite logo1.png'
+import gmail from '../assets/gmail1.gif'
+import whatsapp from '../assets/whatsapp.gif'
+import linkedin from '../assets/linkedin.gif'
+import github from '../assets/Github1.gif'
+import { Link } from 'react-router-dom'
 function Home() {
   const [loading, setLoading] = useState(true);
     
@@ -48,7 +53,7 @@ function Home() {
           <h2 className={style.h22}> Desarrollador Web FullStack </h2>
       </div>
       <div className={style.h1tecCont}>
-        <h2 className={style.h1tec}>React | Redux | HTML | CSS | JavaScript | Express | Sequelize | PostgreSQL | Node.js | Vite js</h2>
+        <h2 className={style.h1tec}>React | Redux | HTML | CSS | JavaScript | Express | Sequelize | PostgreSQL | Node.js | Vite js | Tailwind</h2>
       </div>
       <div className={style.iconosCont}>
         
@@ -63,7 +68,34 @@ function Home() {
         <img className={style.vite} src={vite} to='vite logo' />
 
       </div>
+      <div className={style.ContactContainer}>
+      <div className={style.contactinfo}>
+      <div className={style.correoIcon}>
+      
+      <img className={style.iconmail} src={gmail} to='email'/>
+      <h2 className={style.correo}>kennygabriel00@gmail.com</h2>
+    </div>
+    <div className={style.whatsappContainer}>
+    <img className={style.whatsappicon} src={whatsapp} to='whatsappicon'/>
+      <h2 className={style.numero}>+54 9 11 38770171</h2>
       </div>
+      <div className={style.linkedinContainer}>
+      <img className={style.linked} src={linkedin} to='linkedin'/>
+      <Link className={style.linkedlink} to='https://www.linkedin.com/in/kenny-p%C3%A9rez-75760118b/' target="_blank">
+      <h2 className={style.linkedtext}>Linkedin Kenny  Perez </h2>
+      </Link>
+      </div>
+      <div className={style.gitContainer}>
+      <img className={style.imagegit} src={github} to='github' />
+      <Link className={style.gitlink} to='https://github.com/KennyGi0053' target="_blank">
+      <h2 className={style.gittext}>/KennyGi0053</h2>
+      </Link>
+      </div>
+      </div>
+
+      </div>
+      </div>
+      
         )}
       </div>
         )

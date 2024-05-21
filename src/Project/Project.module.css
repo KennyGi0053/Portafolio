@@ -4,11 +4,9 @@
     justify-content: center;
     min-height: 100vh; 
     width: 100%;  
-    background-color: black;
+    background-color: transparent;
     background-size: 100% 100%;
     background: linear-gradient(-45deg, #000000, #292828, #000000);
-  background-size: 200% 200%;
-  animation: gradientAnimation 10s linear infinite; /* Ajusta la duración según tu preferencia */
     overflow: hidden;
   }
   @keyframes gradientAnimation {
@@ -24,15 +22,10 @@
   }
 
   .imagegames {
-    
-    
-    
-    height: 300px;
-    font-size: 24px; /* Ajusta el tamaño de fuente según sea necesario */
+    height: 150px;
     
     transition: transform 0.5s ease;
     cursor: pointer;
-    margin-top: -100px;
 
   }
 
@@ -42,7 +35,7 @@
 
     .titulo1 {
         color: aliceblue;
-    
+        text-decoration: none;
     
     
         opacity: 0; /* Inicialmente, el texto tiene una opacidad de 0 */
@@ -50,8 +43,7 @@
         background: linear-gradient(45deg, rgb(5,221,98), #3b5998);
   -webkit-background-clip: text; /* Esto es necesario para navegadores webkit como Chrome y Safari */
   color: transparent;
-  font-size: 40px;
-  height: 200px;
+  margin: 30px;
  
     }
       
@@ -64,6 +56,18 @@
         }
       }
 
+      .link1 {
+        text-decoration: none;
+      }
+
+      .link2 {
+        text-decoration: none;
+      }
+
+      .link3 {
+        text-decoration: none;
+      }
+
       .titulo2 {
         color: aliceblue;
         opacity: 0; /* Inicialmente, el texto tiene una opacidad de 0 */
@@ -71,8 +75,8 @@
         background: linear-gradient(45deg, rgb(5,221,98), #3b5998);
   -webkit-background-clip: text; /* Esto es necesario para navegadores webkit como Chrome y Safari */
   color: transparent;
-  font-size: 40px;
-  height: 200px;
+  text-decoration: none;
+  margin: 30px;
  
       }
 
@@ -88,11 +92,9 @@
       .ticket {
  
         
-    height: 300px;
-    font-size: 24px; /* Ajusta el tamaño de fuente según sea necesario */
+    height: 150px;
     transition: transform 0.5s ease;
     cursor: pointer;
-    margin-top: -100px;
  
     
       }
@@ -102,9 +104,78 @@
     
     }
     
+    
+    .titulo3 {
+      opacity: 0; /* Inicialmente, el texto tiene una opacidad de 0 */
+      animation: fadeIn 20s ease forwards; /* Aplica una animación de aparición gradual */
+      background: linear-gradient(45deg, rgb(5,221,98), #3b5998);
+-webkit-background-clip: text; /* Esto es necesario para navegadores webkit como Chrome y Safari */
+color: transparent;
+margin: 30px;
+text-decoration: none;
+
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0; /* Empieza con opacidad 0 (invisible) */
+      }
+      to {
+        opacity: 1; /* Termina con opacidad 1 (totalmente visible) */
+      }
+    }
+
+    .shopi {
+
+  height: 150px;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+    text-decoration: none;
+
+  
+    }
+
+    .shopi:hover {
+      transform: rotateY(30deg) scale(1.2); /* Gira horizontalmente y aumenta el tamaño */
+  
+  }
+
+  .titulo4 {
+    opacity: 0; /* Inicialmente, el texto tiene una opacidad de 0 */
+    animation: fadeIn 20s ease forwards; /* Aplica una animación de aparición gradual */
+    background: linear-gradient(45deg, rgb(5,221,98), #3b5998);
+-webkit-background-clip: text; /* Esto es necesario para navegadores webkit como Chrome y Safari */
+color: transparent;
+margin: 30px;
+text-decoration: none;
+
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0; /* Empieza con opacidad 0 (invisible) */
+    }
+    to {
+      opacity: 1; /* Termina con opacidad 1 (totalmente visible) */
+    }
+  }
+
+  .mundocurso {
+
+    height: 150px;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+      
+  
+    
+      }
+  
+      .mundocurso:hover {
+        transform: rotateY(30deg) scale(1.2); /* Gira horizontalmente y aumenta el tamaño */
+      }
     .laptop {
        
-        height: 200px;
+        height: 60px;
        
 
     }
@@ -114,8 +185,7 @@
         
         color: antiquewhite;
      
-        font-size: 40px;
-        animation: revealText 4s ease-in-out; /* Ajusta la duración de la animación según sea necesario */
+        font-size: 30px;
         background: linear-gradient(45deg, rgb(5,221,98), #3b5998);
       -webkit-background-clip: text; /* Esto es necesario para navegadores webkit como Chrome y Safari */
       color: transparent;
@@ -137,8 +207,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 100px;
-        margin-left: 200px;
+        gap: 50px;
+        margin: 10px;
+        
         
         
       }
@@ -148,27 +219,27 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        gap: 120px;
-    
+        text-align: center;
+        gap:50px;
+        margin: 50px;
       }
 
       
       
       /* Media query para dispositivos con una pantalla de hasta 740px de ancho */
 /* Media query para dispositivos con una pantalla de hasta 740px de ancho */
-@media screen and (max-width: 1060px) {
-  .tituloLaptop,
+@media screen and (max-width: 840px) {
+  
   .imagenes,
   .H2 {
-    margin-left: 0; /* Elimina el margen izquierdo */
     text-align: center; /* Centra el contenido de los contenedores */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 50px;
     
   
   }
+  
  
 }

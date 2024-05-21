@@ -36,9 +36,7 @@ const NavBar = () => {
         <NavLink to='/Acerca'>
         <a>Acerca de mi</a>
         </NavLink>
-        <NavLink to='Contactame'>
-        <a>Contactame</a>
-        </NavLink>
+        
         <div className={style.Music}>
         <Musica/>
         </div>
