@@ -2,7 +2,6 @@ import { Routes, Route} from 'react-router-dom'
 import Home from './Home/Home'
 import Project from './Project/Project'
 import Acerca from './Acerca/Acerca'
-import Contactame from './Contactame/Contactame'
 import NavBar from './NavBar/NavBar'
 import './App.module.css'
 function App() {
