@@ -53,7 +53,7 @@ function Home() {
           <h2 className={style.h22}> Desarrollador Web FullStack </h2>
       </div>
       <div className={style.h1tecCont}>
-        <h2 className={style.h1tec}>React | Redux | HTML | CSS | JavaScript | Express | Sequelize | PostgreSQL | Node.js | Vite js | Tailwind</h2>
+        <h2 className={style.h1tec}>React | Redux | HTML | CSS | JavaScript | Express | Sequelize | PostgreSQL | Node.js | Vite js | Tailwind CSS</h2>
       </div>
       <div className={style.iconosCont}>
         
