@@ -157,7 +157,7 @@
     color: rgb(5,221,98);
     text-align: center;
     justify-content: center;
-    min-height: 230px;
+    min-height: 100px;
     border-bottom-left-radius: 20px; /* Redondea la esquina inferior izquierda */
     border-bottom-right-radius: 20px; /* Redondea la esquina inferior derecha */
     transition: border-color 0.5s ease;
@@ -194,7 +194,7 @@
   justify-content: center;
   color: aliceblue;
   font-size: 16px;
-  margin: 80px;
+  margin: 120px;
 
 }
 
@@ -299,6 +299,7 @@ z-index: 4;
   align-items: center;
   text-align: center;
   justify-content: center;
+  margin: 20px;
 }
 
 .ContactContainer {
@@ -421,9 +422,8 @@ z-index: 4;
 }
 
 @media screen and (max-width: 1060px) {
- 
+  .h22Cont,
   .container,
-  .h1tecCont,
   .contactinfo
   {
     margin: 0;
@@ -466,5 +466,22 @@ z-index: 4;
     width: 100%;
   }
 
+  .h1tecCont {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    margin: 0;
+  }
+
+  .h1tec{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+  }
 
 }
