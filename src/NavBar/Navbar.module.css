@@ -10,8 +10,6 @@
     
     flex-direction: row;
 
-    
-    
 }
 
 .Nav a {
@@ -21,7 +19,8 @@
     width: 100px;
     text-decoration: none;
     color: white;
-    font-family: fantasy;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
   }
 
   .Nav a:hover {

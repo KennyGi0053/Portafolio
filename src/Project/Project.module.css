@@ -37,7 +37,7 @@
         color: aliceblue;
         text-decoration: none;
     
-    
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
         opacity: 0; /* Inicialmente, el texto tiene una opacidad de 0 */
         animation: fadeIn 20s ease forwards; /* Aplica una animación de aparición gradual */
         background: linear-gradient(45deg, rgb(5,221,98), #3b5998);
@@ -77,6 +77,8 @@
   color: transparent;
   text-decoration: none;
   margin: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
  
       }
 
@@ -113,6 +115,8 @@
 color: transparent;
 margin: 30px;
 text-decoration: none;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 
     }
 
@@ -148,6 +152,8 @@ text-decoration: none;
 color: transparent;
 margin: 30px;
 text-decoration: none;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 
   }
 
@@ -189,7 +195,8 @@ text-decoration: none;
         background: linear-gradient(45deg, rgb(5,221,98), #3b5998);
       -webkit-background-clip: text; /* Esto es necesario para navegadores webkit como Chrome y Safari */
       color: transparent;
-      
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+
     }
 
     @keyframes revealText {

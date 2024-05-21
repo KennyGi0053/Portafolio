@@ -32,7 +32,7 @@
     font-size: 14px; /* Ajusta el tamaño de fuente según sea necesario */
     overflow: hidden; /* Oculta cualquier parte del texto que se salga del contenedor */
     white-space: nowrap; /* Evita el salto de línea */
-    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     justify-content: center;
   }
 
@@ -91,9 +91,7 @@
     
   }
 
-  .fondoContainer {
-    display: flex;
-  }
+  
   .fondo {
     display: flex;
     align-items: center;
@@ -139,6 +137,7 @@
     text-align: center;
     justify-content: center;
     font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
   .h22Cont {
@@ -157,7 +156,7 @@
     color: rgb(5,221,98);
     text-align: center;
     justify-content: center;
-    min-height: 100px;
+    height: 250px;
     border-bottom-left-radius: 20px; /* Redondea la esquina inferior izquierda */
     border-bottom-right-radius: 20px; /* Redondea la esquina inferior derecha */
     transition: border-color 0.5s ease;
@@ -194,7 +193,8 @@
   justify-content: center;
   color: aliceblue;
   font-size: 16px;
-  margin: 120px;
+  margin: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
 
@@ -333,7 +333,7 @@ z-index: 4;
 }
 .iconmail {
   align-items: center;
-  height: 30px;
+  height: 45px;
   justify-content: center;
   margin: 10px;
 
@@ -375,7 +375,7 @@ z-index: 4;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 30px;
+  height: 45px;
   margin: 10px;
  
 }
@@ -403,7 +403,7 @@ z-index: 4;
 .imagegit {
   display: flex;
   align-items: center;
-  height: 45px;
+  height: 50px;
 
   margin: 10px;
 }
@@ -422,34 +422,28 @@ z-index: 4;
 }
 
 @media screen and (max-width: 1060px) {
-  .h22Cont,
-  .container,
-  .contactinfo
-  {
-    margin: 0;
-    text-align: center; /* Centra el contenido de los contenedores */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
+  
   .saludo {
     display: flex;
     flex-direction: wrap;
     align-items: center;
     text-align: center;
     justify-content: center;
-    font-size: 9px;
+    font-size: 7px;
   }
-  .contactinfo{
-    margin-top: 40px;
-  }
+ 
 
+  .iconosCont {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
   .relojContainer {
-    margin: 30px;
+    margin: 10px;
   }
 
+  
   .varicont {
     display: flex;
     flex-direction: column;
@@ -463,7 +457,7 @@ z-index: 4;
     align-items: center;
     justify-content: center;
     min-height: 20px;
-    width: 100%;
+    width: 90%;
   }
 
   .h1tecCont {
@@ -472,8 +466,6 @@ z-index: 4;
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 90%;
-    margin: 0;
   }
 
   .h1tec{
@@ -481,7 +473,42 @@ z-index: 4;
     flex-direction: row;
     align-items: center;
     text-align: center;
-    margin: 20px;
+    
   }
 
+  .h2cont {
+    height: 400px;
+  }
+
+  .ContactContainer {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
+    width: 50%;
+    margin: 0;
+  }
+
+  .contactinfo {
+    display: flex;
+    margin: 0;
+    width: 90%;
+  }
+
+  .iconmail {
+    height: 30px;
+  }
+
+  .correo {
+    font-size: 14px;
+  }
+
+  
+  .whatsappicon {
+    height: 30px;
+  }
+
+  .imagegit {
+    margin: 0;
+  }
 }
