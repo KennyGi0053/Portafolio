@@ -1,7 +1,7 @@
 import style from './Navbar.module.css'
 import { NavLink } from 'react-router-dom'
 import logo from '../../src/assets/Kenny Logo.png'
-import CV from '../assets/cv kenny sep.pdf'
+import CV from '../assets/CV Kenny Gabriel Perez Rosales Full Stack Developer.pdf'
 import Musica from '../Musica/Musica'
 import { useState } from 'react'
 
@@ -25,7 +25,7 @@ const NavBar = () => {
         <section className={`${style.links} ${showNav ? style.showNav : ''}`}>
         <div className={style.hamburguer}>
         <NavLink to='/'>
-            <a>Inicio</a>
+            <a className={style.inicio}>Inicio</a>
         </NavLink>
         <NavLink to='/Project'>
         <a>Mis Proyectos</a>

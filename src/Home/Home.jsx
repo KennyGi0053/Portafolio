@@ -80,8 +80,8 @@ function Home() {
       {/* <h2 className={style.numero}>+54 9 11 38770171</h2> */}
       </div>
       <div className={style.linkedinContainer}>
-      <img className={style.linked} src={linkedin} to='linkedin'/>
       <Link className={style.linkedlink} to='https://www.linkedin.com/in/kenny-p%C3%A9rez-75760118b/' target="_blank">
+      <img className={style.linked} src={linkedin} to='linkedin'/>
       {/* <h2 className={style.linkedtext}>Linkedin Kenny  Perez </h2> */}
       </Link>
       </div>

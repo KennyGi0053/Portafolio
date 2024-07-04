@@ -3,6 +3,7 @@ import Videogames from '../assets/Videogames Landing.png'
 import Ticket from '../assets/TicketShow.png'
 import laptop from '../assets/laptop2.gif'
 import shopi from '../assets/imagen shopi.png'
+import magical from '../assets/imagen Magical Journey.png'
 import mundocurso from '../assets/imagen mi mundo curso pagina web.png'
 import { Link } from 'react-router-dom'
 import Loader from '../Loader/Loader'
@@ -44,6 +45,10 @@ const Project = () => {
     <Link className={style.link4} to='https://especial-shopi-i5o5.vercel.app/' target="_blank">
       <h2 className={style.titulo4}>Especial Shopi</h2>
       <img className={style.shopi} src={shopi} alt='especialshopi' />
+    </Link>
+    <Link className={style.link4} to='https://magical-journey-sigma.vercel.app/' target="_blank">
+      <h2 className={style.titulo4}>Magical Journey</h2>
+      <img className={style.shopi} src={magical} alt='especialshopi' />
     </Link>
  
 </section>
